@@ -37,11 +37,3 @@ variable "provider_location" {
   default = "us-central1"
 }
 
-variable "bucket_name" {
-  type = string
-}
-
-variable "location" {
-  type    = string
-  default = "US"
-}

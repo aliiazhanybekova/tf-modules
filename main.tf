@@ -3,10 +3,6 @@ resource "google_service_account" "default" {
   display_name = var.service_account_display_name
 }
 
-resource "google_project_iam_binding" "object_viewer" {
-  project = "seraphic-gate-420802"
-  role    = "roles/storage.objectViewer"
-}
 
 resource "google_container_cluster" "primary" {
   name               = var.cluster_name
